@@ -1,0 +1,68 @@
+#contenedor{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.libro{
+
+    border-style: solid;
+    padding: 3px;
+    width: 300px;
+    display:flex;
+    flex-direction: column;
+    margin: 20px;
+    
+}
+img{
+    width: 100%;
+}
+h3{
+    display: none;
+}
+
+h2:hover{
+    transform: scale(1.2);
+    color: darkcyan;
+}
+
+img:active {
+
+    
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+box-shadow: 10px 10px 15px;
+
+}
+
+#contenedor:active {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+p{
+color:blue !important;
+background-color:yellow;
+}
+
+@media screen and (max-width:500px) {
+    h2,p,img,.libro,#contenedor{
+        display: none ;
+    
+        
+    }
+
+ 
+ @media screen and (min-width:500px) {
+        h3{
+           display: block;
+           color: aqua;
+            
+        } 
+
+    
+}
+}
